@@ -1,0 +1,62 @@
+{
+    "name": "healthcare-network-patients",
+    "version": "1.0.0",
+    "client": {
+        "organization": "patients",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "patients": {
+            "mspid": "patientsMSP",
+            "peers": [
+                "peer0.patients.healthnet.com",
+                "peer1.patients.healthnet.com"
+            ],
+            "certificateAuthorities": [
+                "ca.patients.healthnet.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.patients.healthnet.com": {
+            "url": "grpcs://localhost:11051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICcTCCAhigAwIBAgIRAL6SYaDS6HE6B4FQQgcWzWkwCgYIKoZIzj0EAwIwgYIx\nCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4g\nRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50cy5oZWFsdGhuZXQuY29tMSUwIwYD\nVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhuZXQuY29tMB4XDTIyMDgyNzE3NTkw\nMFoXDTMyMDgyNDE3NTkwMFowgYIxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxp\nZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50\ncy5oZWFsdGhuZXQuY29tMSUwIwYDVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhu\nZXQuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZ78g5ffUcLSXibFo/h+I\n2pjVonE/7G8U0JuEZHUvvn3cWiV9oltxgHsEKLZzZSV4hRVie5V284rbIMOze7ln\nZqNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEF\nBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCBRvmzFO7EtXeHXdOgHaHUb\nPr1in6wsZ2ASwp3hfdF1ujAKBggqhkjOPQQDAgNHADBEAiAUdhzdrMWoQj95/YyC\nL4LPsd2mXhCX+mzPJDaNFO27cwIgAmvc0237CoR7UmhMFlludoJyhusTLRUNL7xw\nRfV8UKI=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.patients.healthnet.com",
+                "hostnameOverride": "peer0.patients.healthnet.com"
+            }
+        },
+	"peer1.patients.healthnet.com": {
+            "url": "grpcs://localhost:12051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICcTCCAhigAwIBAgIRAL6SYaDS6HE6B4FQQgcWzWkwCgYIKoZIzj0EAwIwgYIx\nCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4g\nRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50cy5oZWFsdGhuZXQuY29tMSUwIwYD\nVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhuZXQuY29tMB4XDTIyMDgyNzE3NTkw\nMFoXDTMyMDgyNDE3NTkwMFowgYIxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxp\nZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50\ncy5oZWFsdGhuZXQuY29tMSUwIwYDVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhu\nZXQuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZ78g5ffUcLSXibFo/h+I\n2pjVonE/7G8U0JuEZHUvvn3cWiV9oltxgHsEKLZzZSV4hRVie5V284rbIMOze7ln\nZqNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEF\nBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCBRvmzFO7EtXeHXdOgHaHUb\nPr1in6wsZ2ASwp3hfdF1ujAKBggqhkjOPQQDAgNHADBEAiAUdhzdrMWoQj95/YyC\nL4LPsd2mXhCX+mzPJDaNFO27cwIgAmvc0237CoR7UmhMFlludoJyhusTLRUNL7xw\nRfV8UKI=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.patients.healthnet.com",
+                "hostnameOverride": "peer1.patients.healthnet.com"
+            }
+        }
+
+	
+    },
+    "certificateAuthorities": {
+        "ca.patients.healthnet.com": {
+            "url": "https://localhost:9054",
+            "caName": "ca.patients.healthnet.com",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICcTCCAhigAwIBAgIRAL6SYaDS6HE6B4FQQgcWzWkwCgYIKoZIzj0EAwIwgYIx\nCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4g\nRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50cy5oZWFsdGhuZXQuY29tMSUwIwYD\nVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhuZXQuY29tMB4XDTIyMDgyNzE3NTkw\nMFoXDTMyMDgyNDE3NTkwMFowgYIxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxp\nZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJhbmNpc2NvMR8wHQYDVQQKExZwYXRpZW50\ncy5oZWFsdGhuZXQuY29tMSUwIwYDVQQDExx0bHNjYS5wYXRpZW50cy5oZWFsdGhu\nZXQuY29tMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEZ78g5ffUcLSXibFo/h+I\n2pjVonE/7G8U0JuEZHUvvn3cWiV9oltxgHsEKLZzZSV4hRVie5V284rbIMOze7ln\nZqNtMGswDgYDVR0PAQH/BAQDAgGmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEF\nBQcDATAPBgNVHRMBAf8EBTADAQH/MCkGA1UdDgQiBCBRvmzFO7EtXeHXdOgHaHUb\nPr1in6wsZ2ASwp3hfdF1ujAKBggqhkjOPQQDAgNHADBEAiAUdhzdrMWoQj95/YyC\nL4LPsd2mXhCX+mzPJDaNFO27cwIgAmvc0237CoR7UmhMFlludoJyhusTLRUNL7xw\nRfV8UKI=\n-----END CERTIFICATE-----\n"
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

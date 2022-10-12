@@ -1,0 +1,102 @@
+
+OrdererOrgs:
+  # ---------------------------------------------------------------------------
+  # Orderer
+  # ---------------------------------------------------------------------------
+  - Name: Orderer
+    Domain: healthnet.com
+    EnableNodeOUs: true
+
+    # ---------------------------------------------------------------------------
+    # "Specs" - See PeerOrgs below for complete description
+    # ---------------------------------------------------------------------------
+    Specs:
+      - Hostname: orderer
+        SANS:
+            - "localhost"
+            - "127.0.0.1"
+      # - Hostname: orderer2
+      #   SANS:
+      #     - "localhost"
+      #     - "127.0.0.1"
+      # - Hostname: orderer3
+      #   SANS:
+      #       - "localhost"
+      #       - "127.0.0.1"
+
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # Org1
+  # ---------------------------------------------------------------------------
+  - Name: Hospital1
+    Domain: hospital1.healthnet.com
+    EnableNodeOUs: true
+
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+
+    Users:
+      Count: 1
+
+  - Name: Hospital2
+    Domain: hospital2.healthnet.com
+    EnableNodeOUs: true
+
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+
+    Users:
+      Count: 1
+
+  - Name: Patients
+    Domain: patients.healthnet.com
+    EnableNodeOUs: true
+
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+
+    Users:
+      Count: 1
+
+  - Name: Laboratory
+    Domain: laboratory.healthnet.com
+    EnableNodeOUs: true
+
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+
+    Users:
+      Count: 1
+  
+  - Name: Insurance
+    Domain: insurance.healthnet.com
+    EnableNodeOUs: true
+
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+      SANS:
+        - "localhost"
+
+    Users:
+      Count: 1
