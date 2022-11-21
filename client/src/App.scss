@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // transition: all .5s;
+  background-color: #ecf0f4;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+html,
+body {
+  height: 100%;
+}
+.img {
+  max-width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+.btn {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+a,
+a:focus,
+a:hover {
+  color: rgb(0, 129, 118);
+  text-decoration: none;
+}
+a,
+.btn {
+  color: #3cbeb3;
+  outline: medium none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #313131;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: normal;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #7e7e7e;
+}
+hr {
+  border-bottom: 1px solid #eceff8;
+  border-top: 0 none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+}
+.main-panel {
+  margin-left: 250px;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.box-shadow {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.bg-purple {
+  background-color: #6777ef !important;
+}
+.bg-shadowGreen {
+  background-color: #00cba9 !important;
+}
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+.bg-blue {
+  background-color: #000b76 !important;
+}
+.action-btn {
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+  padding: 3px;
+  color: #fff;
+  &:hover {
+    color: #222;
+    background-color: #ddd;
+  }
+}
+.edit-btn {
+  background-color: #00cba9;
+}
+.delete-btn {
+  background-color: #dc3545;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .side-panel {
+    display: none;
+  }
+  .main-panel {
+    margin-left: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

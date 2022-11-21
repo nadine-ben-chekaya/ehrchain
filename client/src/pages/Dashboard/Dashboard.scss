@@ -1,0 +1,95 @@
+#content-dashboard {
+    margin: 30px 0 0px 0;
+    min-height: calc(100vh - 76px);
+    transition: 0.5s;
+    .block-header {
+        .breadcrumb {
+            background-color: transparent;
+            color: #222;
+            padding: 0;
+            li:nth-child(1) {
+                font-size: 1.6rem;
+                margin: -11px 0;
+                font-weight: 600;
+            }
+            .breadcrumb-item {
+                a {
+                    color: #6c757d;
+                }
+                &.active {
+                    color: #3cbeb3;
+                }
+            }
+        }
+    }
+    .section--daily-statistics {
+        .card-style {
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+        }
+        .statistics-card {
+            padding: 20px 20px 15px 20px;
+            .card-icon {
+                background-color: #ddd;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin: 6px 0;
+                font-size: 22px;
+                color: #fff;
+                box-shadow: 5px 3px 10px 0 rgba(21, 15, 15, 0.3);
+            }
+        }
+    }
+    .section--daily-status {
+        .card-style {
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+            .card-content {
+                width: 100%;
+            }
+            .apexcharts-toolbar {
+                display: none !important;
+            }
+        }
+    }
+    .section--vaccinate-patient {
+        .card-style {
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+        }
+    }
+    .section--activity-board {
+        .card-style {
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+            .card-body {
+                flex: 1 1 auto;
+                min-height: 1px;
+                max-height: 400px;
+                overflow: auto;
+                padding: 1.25rem;
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    border-radius: 5px;
+                    padding-right: 10px;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: #f2f2f2;
+                    border-radius: 10px;
+                    padding-right: 10px;
+                }
+
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: rgba(151, 146, 146, 0.4);
+                }
+            }
+        }
+    }
+}
