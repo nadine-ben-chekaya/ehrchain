@@ -1,0 +1,42 @@
+.vaccinate-appoinment-edit-modal--content {
+    .modal-dialog {
+        .modal-content {
+            .modal-footer {
+                .close-btn {
+                    color: #fff !important;
+                }
+                .submit-btn {
+                    color: #fff !important;
+                    background-color: #3cbeb3;
+                    border-color: #3cbeb3;
+                }
+            }
+        }
+    }
+}
+
+.category {
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+.select {
+    padding: 0.3em;
+    margin-top: 5px;
+}
+
+.share-btn {
+    padding: 0.4em;
+    width: 8em;
+    height: 3em;
+    background-color: #3cbeb3;
+    color: white;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: all 0.3s;
+}
+.share-btn:hover {
+    background-color: #048e83;
+}
